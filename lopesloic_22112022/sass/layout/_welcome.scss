@@ -1,0 +1,112 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+
+    div {
+        width: 100%;
+        background-color: $bg-color-grey;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+
+        span {
+            padding-left: 10px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+button {
+    background: linear-gradient($primary-color, $secondary-color);
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(150%);
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+    .welcome {
+        div {
+            padding: 30px;
+
+            i {
+                font-size: 30px;
+            }
+
+            span {
+                padding-left: 20px;
+                font-size: 30px;
+            }
+        }
+
+        h1 {
+
+            font-size: 50px;
+        }
+
+        p {
+
+            font-size: 20px;
+        }
+    }
+
+    button {
+        padding: 30px;
+        border-radius: 50px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large et au plus 4000px de large */
+@media all and (min-width:992px) and (max-width:4000px) {
+    .welcome {
+        div {
+            padding: 30px;
+
+            i {
+                font-size: 30px;
+            }
+
+            span {
+                padding-left: 20px;
+                font-size: 30px;
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 30px;
+            border-radius: 50px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.menu_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $bg-color;
+}
+.menu__image{
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        >img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.resto_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg-color;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left:15px; 
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    position: absolute;
+    top: 165px;
+         >h1{
+            font-family: 'Shrikhand';
+            font-size: 36px;
+         }
+         >i{
+            padding-right: 50px;
+         }
+}
+.menu{
+    background-color: $bg-color;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+             >h3{
+                font-size: 16px;
+             }
+             div>p{
+                font-size: 14px;
+             }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button_menu{
+    padding: 15px 45px;
+}
+.h2__bordure{
+    width: 40px;
+    height: 20px;
+    border-top: 2px solid $tertiary-color;
+}

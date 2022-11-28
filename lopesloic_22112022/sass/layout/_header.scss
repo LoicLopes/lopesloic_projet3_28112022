@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 200px;
+        padding: 20px;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+    header {
+        img {
+            width: 400px;
+        }
+    }
+
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large et au plus 4000px de large */
+@media all and (min-width:992px) and (max-width:4000px) {
+    header {
+        img {
+            width: 400px;
+
+        }
+    }
+
+}
