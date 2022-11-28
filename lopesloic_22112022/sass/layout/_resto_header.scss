@@ -1,9 +1,36 @@
 .resto_header{
-    justify-content: space-around;
-    align-items: center;
-    padding-left:20px;
-    img{
-        width: 100px;
-        padding: 20px;
-    }
+    position: relative;
+        a{
+             i{
+            position: absolute;
+            font-size: 20px;
+            left: 20px;
+            top: 30px;
+            }           
+        }
 }
+    
+
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+.resto_header{
+        a{
+             i{
+            font-size: 40px;
+            left: 30px;          
+            }   
+        }
+}
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
+@media all and (min-width:992px) {
+.resto_header{
+        a{       
+            i{
+            font-size: 40px;
+            left: 280px;                          
+            }              
+        }       
+}                     
+}                

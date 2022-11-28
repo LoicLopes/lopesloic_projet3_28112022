@@ -17,6 +17,7 @@ a{
     color: black;
     display: block;
 }
+
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
 @media all and (min-width:992px) {
     main{
@@ -26,6 +27,6 @@ a{
         margin-right: auto;
         flex-direction: column;
         height: 100%;
-        background-color: #f7f7f7;
+    
     }
 }

@@ -24,23 +24,13 @@
     p {
         text-align: center;
     }
-}
-
-button {
-    background: linear-gradient($primary-color, $secondary-color);
-    padding: 20px;
-    border: none;
-    border-radius: 30px;
-    color: white;
+    button{
     margin-top: 20px;
-    margin-bottom: 40px;
-    transition: background-color 1s;
-    cursor: pointer;
+    margin-bottom: 40px;  
+    }
 }
 
-button:hover {
-    filter: brightness(150%);
-}
+
 
 /* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
 @media all and (min-width:768px) and (max-width:991px) {
@@ -67,13 +57,12 @@ button:hover {
 
             font-size: 20px;
         }
-    }
-
-    button {
-        padding: 30px;
-        border-radius: 50px;
-        margin-top: 30px;
-        font-size: 30px;
+        button {
+            padding: 30px;
+            border-radius: 50px;
+            margin-top: 30px;
+            font-size: 30px;
+        }
     }
 }
 

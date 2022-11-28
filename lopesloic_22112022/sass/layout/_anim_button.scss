@@ -1,0 +1,12 @@
+button{
+    background: linear-gradient($primary-color, $secondary-color);
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: background-color 1s;
+    cursor: pointer;
+    }
+button:hover{
+    filter: brightness(150%);
+}
