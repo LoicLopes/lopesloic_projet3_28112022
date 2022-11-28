@@ -18,8 +18,8 @@ header {
 
 }
 
-/* Nouvelles règles si la fenêtre fait au minimum 992px de large et au plus 4000px de large */
-@media all and (min-width:992px) and (max-width:4000px) {
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
+@media all and (min-width:992px) {
     header {
         img {
             width: 400px;

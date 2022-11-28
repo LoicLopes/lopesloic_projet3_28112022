@@ -73,6 +73,7 @@
         }
         &__content {
             flex-direction: row;
+            
         }
     }
     .process_card {
@@ -82,23 +83,23 @@
 }
 
 
-/* Nouvelles règles si la fenêtre fait au minimum 992px de large et au plus 4000px de large */
-@media all and (min-width:992px) and (max-width:4000px) {
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
+@media all and (min-width:992px) {
     .process {
-        width: 20%;
+        width: 30%;
         align-items: center;
         background-color: #f7f7f7;
         margin-top: 0px;
         margin-bottom: 0px;
         >h2 {
          font-size: 40px;
-         padding-left: 40px;    
+         padding-left: 0px;    
         }
         &__content {
             align-items: center;
-            gap: 40px;
-            
+            gap: 40px;           
             height: 100%;
+            justify-content: space-around;
         }
     }
     .process_card {
