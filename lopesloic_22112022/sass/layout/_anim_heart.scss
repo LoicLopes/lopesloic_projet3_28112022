@@ -1,0 +1,12 @@
+.heart_anim{
+    position: absolute;
+    color: transparent;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        opacity: 1;
+    }
+}
