@@ -1,21 +1,33 @@
+.menu__content{
+    position:relative
+}
 .menu__selection{
     color: #f6f6f6;
     background-color: #99e2d0;
+    cursor: pointer;
+    display: flex;
     text-align: center;
-    height: 50px;
+    justify-content: center;
+    position: absolute;
+    text-overflow: ellipsis;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
     border-top-right-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
+    cursor: pointer;
     transform: translateX(100px);
-    cursor: pointer;
     transition: all 700ms;
-    &:hover{
-    transform: translateX(0px);
-    background-color: #99e2d0;
-    cursor: pointer;
-    color: #f6f6f6;
-    }
+          &:hover{
+            transform: translate(0px);
+            background-color: #99e2d0;
+            cursor: pointer;
+            color: #f6f6f6;
+         }
 }
 .fa-check-circle{
     color: blue;
+    
 }
 

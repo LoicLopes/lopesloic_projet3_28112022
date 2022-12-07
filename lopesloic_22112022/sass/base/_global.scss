@@ -19,7 +19,7 @@ a{
 
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
 @media all and (min-width:992px) {
-    main{
+    .container_page{
         max-width: 1400px;
         display: flex;
         margin-left: auto;
