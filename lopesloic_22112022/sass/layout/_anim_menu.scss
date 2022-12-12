@@ -1,33 +1,31 @@
-.menu__content{
-    position:relative
-}
-.menu__selection{
-    color: #f6f6f6;
-    background-color: #99e2d0;
-    cursor: pointer;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    text-overflow: ellipsis;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 25%;
-    border-top-right-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
-    cursor: pointer;
-    transform: translateX(100px);
-    transition: all 700ms;
-          &:hover{
-            transform: translate(0px);
-            background-color: #99e2d0;
-            cursor: pointer;
-            color: #f6f6f6;
-         }
-}
-.fa-check-circle{
-    color: blue;
-    
+.menu{   
+    &:hover .menu__selection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transform-origin: right;
+        animation: checkbox_scale 0.6s cubic-bezier(0.32, 0, 0.07, 1);
+        span{
+            animation: check_circle_rotate 1s cubic-bezier(0.32, 0, 0.07, 1);
+        }
+      }
 }
 
+@keyframes checkbox_scale {
+    0% {
+      transform: scaleX(0); 
+    }
+    100% {
+      transform: scaleX(1); 
+    } 
+}
+
+@keyframes check_circle_rotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    } 
+}

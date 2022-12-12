@@ -31,34 +31,69 @@
             right: 40px;
          }
 }
-.menu{
+.menus{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;   
     h2{
         font-weight: 400;
-    }
-    &__content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);         
-             h3{
-                font-size: 16px;
-             }
-             div>p{
-                font-size: 14px;
-             }   
+        overflow: hidden;
+        text-overflow: ellipsis;   
     }
 }
+.menu{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 15px;
+        gap: 5px;
+            h3{
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            }
+            p{
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            } 
+    }
+    &__price{
+            display: flex;
+            align-items: flex-end;
+            padding: 15px;
+    } 
+
+    &__selection{
+        color: white;
+        background: $tertiary-color;
+        width: 70px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: none;  
+    }
+}
+
+
 .button_menu{
     display: flex;
     justify-content: center;
@@ -68,6 +103,8 @@
         margin-top: 30px;
     }   
 }
+
+
 .h2__bordure{
     width: 40px;
     height: 20px;
@@ -92,16 +129,18 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .menu{
+    .menus{
         width: 50%;
-        &__content{
-                 h3{
-                    font-size: 14px;
-                 }
-                 div>p{
-                    font-size: 12px;
-                 }            
+    }
+    .menu{
+        &__info{
+        h3{
+        font-size: 14px;
         }
+        p{
+            font-size: 12px;
+        }
+       }           
     }
     .button_menu{
         display: flex;
@@ -139,7 +178,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .menu{
+    .menus{
         width: 30%;
     }
     .button_menu{
