@@ -6,11 +6,13 @@
     margin-bottom: 30px;
     gap: 20px;
     box-sizing: border-box;
+
     >h2 {
         width: 100%;
         font-size: 22px;
         font-weight: 900;
     }
+
     &__content {
         width: 100%;
         display: flex;
@@ -19,7 +21,7 @@
     }
 }
 
-.process_card {
+.process__card {
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
@@ -48,7 +50,7 @@
     }
 }
 
-.number {
+.process__number {
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -61,53 +63,40 @@
     left: 5px;
 }
 
-
-
-
-
 /* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
 @media all and (min-width:768px) and (max-width:991px) {
     .process {
         >h2 {
-         font-size: 40px;    
+            font-size: 40px;
         }
+
         &__content {
             flex-direction: row;
-            
         }
     }
+
     .process_card {
         width: 40%;
-
     }
 }
-
 
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
 @media all and (min-width:992px) {
     .process {
         width: 30%;
         align-items: center;
-        background-color: #f7f7f7;
         margin-top: 0px;
         margin-bottom: 0px;
+
         >h2 {
-         font-size: 30px;
-         padding-left: 0px;    
+            font-size: 30px;
+            padding-left: 0px;
         }
+
         &__content {
             align-items: center;
-            gap: 40px;           
             height: 100%;
             justify-content: space-evenly;
         }
-    }
-    .process_card {
-        width: 100%;
-    }
-    main>div{
-        display: flex;
-        gap: 20px;
-        background-color: #f7f7f7;
     }
 }

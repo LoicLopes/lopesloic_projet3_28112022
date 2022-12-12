@@ -1,62 +1,77 @@
-.menu__image{
+.menu__image {
     width: 100%;
     box-sizing: border-box;
-    img{
+
+    img {
         height: 200px;
         width: 100%;
         object-fit: cover;
     }
 }
-.menu_container{
+
+.menu__container {
     position: relative;
     width: 100%;
     background-color: $bg-color;
     margin-top: -50px;
     border-radius: 30px 30px 0px 0px;
 }
-.menu__title{
+
+.menu__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding-left:15px; 
+    padding-left: 15px;
     border-radius: 30px 30px 0px 0px;
     position: relative;
-         >h1{
-            font-family: 'Shrikhand';
-            font-size: 32px;
-         }
-         >i{
-            position: absolute;
-            right: 40px;
-         }
+
+    >h1 {
+        font-family: 'Shrikhand';
+        font-size: 32px;
+    }
+
+    >i {
+        position: absolute;
+        right: 40px;
+    }
 }
-.menus{
-    display:flex;
+
+.menus {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    text-overflow: ellipsis;   
-    h2{
+    text-overflow: ellipsis;
+
+    h2 {
         font-weight: 400;
         overflow: hidden;
-        text-overflow: ellipsis;   
+        text-overflow: ellipsis;
     }
 }
-.menu{
+
+.h2__bordure {
+    width: 40px;
+    height: 20px;
+    border-top: 2px solid $tertiary-color;
+}
+
+.menu {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1); 
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-overflow: ellipsis;
-    &__info{
+
+    &__info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -66,95 +81,99 @@
         text-overflow: ellipsis;
         padding: 15px;
         gap: 5px;
-            h3{
+
+        h3 {
             font-size: 16px;
             overflow: hidden;
             text-overflow: ellipsis;
-            }
-            p{
+        }
+
+        p {
             font-size: 14px;
             overflow: hidden;
             text-overflow: ellipsis;
-            } 
+        }
     }
-    &__price{
-            display: flex;
-            align-items: flex-end;
-            padding: 15px;
-    } 
 
-    &__selection{
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        padding: 15px;
+    }
+
+    &__selection {
         color: white;
         background: $tertiary-color;
-        width: 70px;
+        width: 100px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        display: none;  
+        display: none;
     }
 }
 
 
-.button_menu{
+.button_menu {
     display: flex;
     justify-content: center;
-    button{
+
+    button {
         padding: 15px 45px;
         margin-bottom: 40px;
         margin-top: 30px;
-    }   
-}
-
-
-.h2__bordure{
-    width: 40px;
-    height: 20px;
-    border-top: 2px solid $tertiary-color;
+    }
 }
 
 
 
 /* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
 @media all and (min-width:768px) and (max-width:991px) {
-    .menu__image{
-        img{
-            height: 250px;     
+    .menu__image {
+        img {
+            height: 250px;
         }
     }
-    .menu_container{
-        width: 80%;       
+
+    .menu__container {
+        width: 80%;
         max-width: 1400px;
         margin: auto;
-        margin-top: -50px;   
+        margin-top: -50px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .menus{
+
+    .menus {
         width: 50%;
     }
-    .menu{
-        &__info{
-        h3{
-        font-size: 14px;
+
+    .menu {
+        &__info {
+            h3 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+            }
         }
-        p{
-            font-size: 12px;
-        }
-       }           
     }
-    .button_menu{
+
+    .button_menu {
         display: flex;
         justify-content: center;
         width: 50%;
         height: 50px;
         margin-top: 100px;
         margin-bottom: 300px;
-        button{
+
+        button {
             margin: 0px;
         }
-        
+
     }
-    .h2__bordure{
+
+    .h2__bordure {
         width: 40px;
         height: 20px;
         border-top: 2px solid $tertiary-color;
@@ -163,30 +182,34 @@
 
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
 @media all and (min-width:992px) {
-    .menu__image{
-        img{
-            height: 250px;     
+    .menu__image {
+        img {
+            height: 250px;
         }
     }
-    .menu_container{
-        width: 85%;       
+
+    .menu__container {
+        width: 85%;
         max-width: 1400px;
         margin: auto;
-        margin-top: -50px;   
+        margin-top: -50px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
     }
-    .menus{
+
+    .menus {
         width: 30%;
     }
-    .button_menu{
+
+    .button_menu {
         width: 100%;
         margin-bottom: 50px;
-        button{
+
+        button {
             padding: 15px 45px;
-        }   
+        }
     }
 
 }

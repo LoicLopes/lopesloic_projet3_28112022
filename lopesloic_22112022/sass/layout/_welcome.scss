@@ -3,50 +3,59 @@
     flex-direction: column;
     align-items: center;
     background-color: $bg-color;
-     div {
+
+    &__location {
         width: 100%;
         background-color: $bg-color-grey;
         display: flex;
         justify-content: center;
         padding: 10px;
         box-sizing: border-box;
+
         span {
             padding-left: 10px;
         }
     }
-    h1 {
+
+    &__title {
         text-align: center;
     }
-    p {
+
+    &__texte {
         text-align: center;
     }
-    button{
-    margin-top: 20px;
-    margin-bottom: 40px;  
+
+    &__button {
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 }
+
 /* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
 @media all and (min-width:768px) and (max-width:991px) {
     .welcome {
-        div {
+        &__location {
             padding: 30px;
+
             i {
                 font-size: 30px;
             }
+
             span {
                 padding-left: 20px;
                 font-size: 30px;
             }
         }
-        h1 {
 
+        &__title {
             font-size: 50px;
         }
-        p {
 
+        &__texte {
             font-size: 20px;
         }
-        button {
+
+        &__button {
             padding: 30px;
             border-radius: 50px;
             margin-top: 30px;
@@ -54,26 +63,32 @@
         }
     }
 }
+
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
 @media all and (min-width:992px) {
     .welcome {
-        div {
+        &__location {
             padding: 30px;
+
             i {
                 font-size: 30px;
             }
+
             span {
                 padding-left: 20px;
                 font-size: 30px;
             }
         }
-        h1 {
+
+        &__title {
             font-size: 50px;
         }
-        p {
+
+        &__texte {
             font-size: 20px;
         }
-        button {
+
+        &__button {
             padding: 30px;
             border-radius: 50px;
             margin-top: 30px;

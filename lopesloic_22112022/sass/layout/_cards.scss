@@ -4,14 +4,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    &__title{
+
+    &__title {
         width: 100%;
         font-size: 22px;
         font-weight: 900;
     }
 }
-
-
 
 .card {
     width: 100%;
@@ -19,29 +18,32 @@
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
     position: relative;
     box-sizing: border-box;
+
     &:hover {
         box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
     }
-    img {
+
+    &__image {
         height: 200px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         width: 100%;
         object-fit: cover;
-        
     }
 
-    &__texte{
+    &__texte {
         padding: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+
         div {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
+
         i {
             right: 20px;
             font-size: 22px;
@@ -49,18 +51,17 @@
         }
 
     }
-}
-.card__content--new {
-    background-color: $tertiary-color;
-    border-radius: 5px;
-    color: #1f997c;
-    padding: 10px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    
-}
 
+    &__new {
+        background-color: $tertiary-color;
+        border-radius: 5px;
+        color: #1f997c;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
 
 /* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large*/
 @media all and (min-width:768px) and (max-width:991px) {
@@ -68,31 +69,36 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        &__title{
+
+        &__title {
             font-size: 40px;
         }
     }
+
     .card {
         width: 45%;
     }
 }
 
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
-@media all and (min-width:992px)  {
+@media all and (min-width:992px) {
     .cards {
         width: 80%;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px 40px;
         justify-content: center;
-        &__title{
+
+        &__title {
             font-size: 30px;
             padding-left: 70px;
         }
     }
+
     .card {
         width: 40%;
-        img {
+
+        &__image {
             height: 150px;
         }
     }

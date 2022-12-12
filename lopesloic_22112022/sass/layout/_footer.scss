@@ -1,62 +1,73 @@
-.footer{
-    background-color: #353535;
+.footer {
+  background-color: $bg-color-footer;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  &__image {
+    width: 100px;
+    filter: invert(100%);
+    margin-top: 10px;
+  }
+
+  &__link {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-       img{
-        width: 100px;
-        filter: invert(100%);
-        margin-bottom: 20px;
-           }
-         &__link{
-              display: flex;
-              flex-direction: column;
-              gap: 20px;
-              font-weight: 600;
-             filter: invert(100%);
-             i{
-               width: 20px;
-               padding-right:10px ;
-             }
-             }
-}
-/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
-@media all and (min-width:768px) and (max-width:991px) {
-  .footer{
-    flex-direction: row;  
     gap: 20px;
-         &__link{           
-              flex-direction: row;
-              justify-content: space-evenly;
-              width: 100%;              
-          }
+    font-weight: 600;
+    filter: invert(100%);
+
+    i {
+      width: 20px;
+      padding-right: 10px;
+    }
   }
 }
-/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
-@media all and (min-width:992px){
 
-  .footer{
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+  .footer {
     flex-direction: row;
     gap: 20px;
-       img{
-        width: 250px;
-           }
-         &__link{         
-              font-size: 30px;    
-              flex-direction: row;
-              justify-content: space-around; 
-              width: 100%;
-              margin-top: 20px;
-              a{
-                font-size: 20px;
-              }
-              span{
-                font-size: 20px;
-              }
-              i{
-                font-size: 20px;
-                padding-right: 20px;
-              }
-             }
+
+    &__link {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
 }
+
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
+@media all and (min-width:992px) {
+
+  .footer {
+    flex-direction: row;
+    gap: 20px;
+
+    &__image {
+      width: 250px;
+    }
+
+    &__link {
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 20px;
+
+      a {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+
+      i {
+        font-size: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
 }
