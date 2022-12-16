@@ -8,6 +8,7 @@
     &:hover {
         background: linear-gradient($primary-color, $secondary-color);
         -webkit-background-clip: text;
+        background-clip: text;
         opacity: 1;
     }
 }

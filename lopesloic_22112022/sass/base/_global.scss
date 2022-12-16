@@ -19,6 +19,13 @@ a {
     display: block;
 }
 
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+    .procces__and__card__flex {
+        background-color: #f7f7f7;
+        padding-bottom: 110px;
+    }
+}
 
 /* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
 @media all and (min-width:992px) {
@@ -36,5 +43,6 @@ a {
         display: flex;
         gap: 20px;
         background-color: #f7f7f7;
+        padding-bottom: 110px;
     }
 }

@@ -2,13 +2,14 @@
   background-color: $bg-color-footer;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px 20px;
  
 
   &__image {
     width: 100px;
     filter: invert(100%);
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   &__link {

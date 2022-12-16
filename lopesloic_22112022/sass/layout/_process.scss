@@ -66,6 +66,9 @@
 /* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
 @media all and (min-width:768px) and (max-width:991px) {
     .process {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
         >h2 {
             font-size: 40px;
         }
