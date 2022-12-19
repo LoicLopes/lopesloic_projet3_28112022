@@ -24,19 +24,35 @@
   }
 
   &__selection {
-    transition: .5s ease-in-out;
-  }
-
-  &:hover .menu__selection {
+    color: white;
+    background: $tertiary-color;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    transform-origin: right;
-    animation: selection__scale 0.6s cubic-bezier(0.45, 0, 0, 1);
+    width: 0;
+    opacity: 0;
+    transition: transform .5s ease-in-out, width .5s ease-in-out, opacity .5s ease-in-out;
 
     span {
-      animation: selection__circle__rotate 1s cubic-bezier(0.45, 0, 0, 1);
+      transition: .4s ease-in-out;
+      transform: rotate(360deg);
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &:hover .menu__selection {
+    width: 120px;
+    opacity: 100%;
+
+
+    span {
+      transform: rotate(0deg);
+
     }
   }
 }
@@ -50,25 +66,5 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes selection__scale {
-  0% {
-    transform: scaleX(0);
-  }
-
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes selection__circle__rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(-360deg);
   }
 }
